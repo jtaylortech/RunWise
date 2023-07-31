@@ -28,4 +28,20 @@ Offer basic nutritional tips and guidelines to support your training and recover
 ****
 
 
+# Tech Stack
+
+- Frontend: React.JS
+- Backend: Python and Django
+- Authentication: Django
+- RestAPI: Django
+- Database: CockroachDB
+
+## Deployment
+
+- Frontend: Netlify
+- Backend: Heroku
+- Database: CockroachCloud
+- Continuous Integration: GitHub Action
+ 
+- Backend Web Server: Gunicorn
 
