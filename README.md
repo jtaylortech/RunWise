@@ -1,5 +1,7 @@
 # RunWise
 
+****
+
 # Key Features
 
 ### User Profile
@@ -23,10 +25,7 @@ Provide reminders for upcoming runs and send notifications to keep you on track 
 ### Nutritional Guidance
 Offer basic nutritional tips and guidelines to support your training and recovery.
 
-
-
 ****
-
 
 # Tech Stack
 
@@ -36,12 +35,11 @@ Offer basic nutritional tips and guidelines to support your training and recover
 - RestAPI: Django
 - Database: CockroachDB
 
-## Deployment
+# Deployment
 
 - Frontend: Netlify
 - Backend: Heroku
 - Database: CockroachCloud
 - Continuous Integration: GitHub Action
- 
 - Backend Web Server: Gunicorn
 
