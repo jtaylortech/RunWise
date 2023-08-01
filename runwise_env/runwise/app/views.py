@@ -7,6 +7,9 @@ from .forms import RegistrationForm, LoginForm
 
 # app/views.py
 
+def home(request):
+    return render(request, 'home.html')
+
 def register_user(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
