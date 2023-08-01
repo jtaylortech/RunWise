@@ -1,0 +1,37 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore database files
+db.sqlite3
+
+# Ignore static files collected by Django's "collectstatic" management command
+/static/
+
+# Ignore media files uploaded by users
+/media/
+
+# Ignore virtual environment files
+runwise_env/
+
+# Ignore virtual environment directories and files
+!runwise_env/bin/
+!runwise_env/include/
+!runwise_env/lib/
+!runwise_env/pip/
+
+# Ignore local development settings file
+runwise/settings/local.py
+
+# Ignore IDE-specific files (Optional, based on your IDE)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore sensitive or confidential information (e.g., secret keys)
+*.secret
+*.key
+*.password

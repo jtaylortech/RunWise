@@ -33,13 +33,12 @@ Offer basic nutritional tips and guidelines to support your training and recover
 - Backend: Python and Django
 - Authentication: Django
 - RestAPI: Django
-- Database: CockroachDB
+- Database: SQLite
 
 # Deployment
 
 - Frontend: Netlify
 - Backend: Heroku
-- Database: CockroachCloud
 - Continuous Integration: GitHub Action
 - Backend Web Server: Gunicorn
 
