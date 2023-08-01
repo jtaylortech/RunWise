@@ -1,0 +1,55 @@
+body {
+    background-color: #333333; /* Darker gray */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    color: #e65d00; /* Burnt orange */
+}
+
+.form {
+    margin-top: 20px;
+}
+
+/* Styling the form fields */
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e65d00; /* Burnt orange border */
+    background-color: #333333; /* Darker gray background */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #e65d00; /* Burnt orange button background */
+    cursor: pointer;
+}
+
+/* Styling the form labels */
+label {
+    color: #e65d00; /* Burnt orange label text */
+}
+
+/* Styling form field placeholders */
+::-webkit-input-placeholder {
+    color: #cccccc; /* Light gray placeholder text for WebKit browsers */
+}
+
+:-ms-input-placeholder {
+    color: #cccccc; /* Light gray placeholder text for IE/Edge */
+}
+
+::placeholder {
+    color: #cccccc; /* Light gray placeholder text for modern browsers */
+}
