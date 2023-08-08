@@ -1,10 +1,49 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RunWise - Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <h1>Welcome to RunWise!</h1>
-    <p>This is the home page of RunWise.</p>
+    <header>
+        <h1>Welcome to RunWise!</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Running Companion</h2>
+            <p>Join RunWise to access personalized marathon training plans, track your progress, and achieve your running goals.</p>
+            <a href="{% url 'register' %}" class="btn btn-orange">Get Started</a>
+        </section>
+
+        <section class="about">
+            <h2>About RunWise</h2>
+            <p>RunWise is a platform designed to help runners of all levels train for marathons and achieve their best performance. We offer personalized training plans, progress tracking, and expert tips to keep you on the right track.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Personalized marathon training and general running plans</li>
+                <li>Track your training progress and performance</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 RunWise. All rights reserved.</p>
+    </footer>
 </body>
 </html>

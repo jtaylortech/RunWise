@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.hashers import make_password
+from django.shortcuts import render
 from .forms import RegistrationForm, LoginForm
 
 # app/views.py
@@ -11,12 +12,13 @@ from .forms import RegistrationForm, LoginForm
 def home(request):
     return render(request, 'home.html')
 
+
 def register_user(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
-            # Has the user's password before saving
-            password = make_password(form.cleaned_data['password'])
+            # Hash the user's password before saving
+            password = make_password(form.cleaned_data['password1'])
             # Create the user object with the hashed password
             user = form.save(commit=False)
             user.password = password
@@ -27,7 +29,6 @@ def register_user(request):
 
     return render(request, 'registration/register.html', {'form': form})
 
-    
 
 def user_login(request):
     if request.method == 'POST':
@@ -41,3 +42,8 @@ def user_login(request):
 
     return render(request, 'registration/login.html', {'form': form})
 
+
+def dashboard(request):
+    # Add logic to fetch user-specific data for the dashboard
+    # For example, fetch the user's training data or other relevant information
+    return render(request, 'dashboard.html')

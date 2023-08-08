@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunWise - Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Welcome to Your Dashboard</h1>
+        <p>Hello, {{ user.username }}!</p>
+        <p>Here's some information about your training progress:</p>
+        <!-- Add more content specific to the dashboard and user data here -->
+    </div>
+</body>
+</html>

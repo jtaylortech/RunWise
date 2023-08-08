@@ -20,6 +20,7 @@ body {
 
 /* Styling the form fields */
 input[type="text"],
+input[type="email"],
 input[type="password"],
 button[type="submit"] {
     width: 100%;
@@ -52,4 +53,24 @@ label {
 
 ::placeholder {
     color: #cccccc; /* Light gray placeholder text for modern browsers */
+}
+
+/* Styling the header links */
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White link text */
+}
+
+/* Adding some margin below the header */
+header {
+    margin-bottom: 20px;
 }
